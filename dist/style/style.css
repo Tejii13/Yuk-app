@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background-color: #f3fafa;
+}
+
+header {
+  background-color: #e2feff;
+}
+
+.search_container input {
+  background-color: #e2feff;
+  border: solid 1px black;
+  color: black;
+}
+
+.produits {
+  background-color: #f3fafa;
+}
+
+label {
+  color: black;
+}
+
+button.feeling_lucky {
+  background-color: #e2feff;
+  border: solid 1px black;
+  color: black;
+}
+
+.search_pd_container input {
+  background-color: #f3fafa;
+  border: solid 1px black;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px px black inset;
+}
+
+footer {
+  background-color: #e2feff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  padding: 10px;
+}
+
+img.brandName {
+  display: block;
+  margin: auto;
+}
+
+.Search_container {
+  border: none;
+  padding: 0 8px;
+  position: relative;
+}
+
+form {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.search_container input {
+  font-size: 16px;
+  outline: 0;
+  width: 50%;
+  padding: 15px 10px 15px 10px;
+  border: 1px solid black;
+  border-radius: 0px 8px;
+}
+
+button.feeling_lucky {
+  margin-top: 10px;
+  width: 20%;
+  margin-left: 40%;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 0px 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  right: auto;
+}/*# sourceMappingURL=style.css.map */

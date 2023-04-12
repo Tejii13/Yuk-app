@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "hint": "^2.0.0",
+    "open-cli": "^7.2.0",
+    "prettier": "^2.8.7"
+  }
+}

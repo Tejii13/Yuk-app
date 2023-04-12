@@ -1,0 +1,5 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1);
+  grid-area: "";
+}/*# sourceMappingURL=index_disp.css.map */

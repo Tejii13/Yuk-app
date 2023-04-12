@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background-color: #f3fafa;
+}
+
+header {
+  background-color: #e2feff;
+}
+
+.search_container input {
+  background-color: #e2feff;
+  border: solid 1px black;
+  color: black;
+}
+
+.produits {
+  background-color: #f3fafa;
+}
+
+label {
+  color: black;
+}
+
+button.feeling_lucky {
+  background-color: #e2feff;
+  border: solid 1px black;
+  color: black;
+}
+
+.search_pd_container input {
+  background-color: #f3fafa;
+  border: solid 1px black;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px px black inset;
+}
+
+footer {
+  background-color: #e2feff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  margin-top: 20px;
+}/*# sourceMappingURL=disposition.css.map */
