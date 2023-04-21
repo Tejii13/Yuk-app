@@ -21,7 +21,12 @@
           class="pd_logo"
         />
       </a>
-      <form action="/dist/html/produit_x.html" method="get">
+      <form
+        action="/dist/html/produit_x.html"
+        role="search"
+        method="get"
+        id="searchForm"
+      >
         <div class="search_pd_container">
           <input
             type="text"
@@ -83,87 +88,80 @@
             <th>Pour 100g/ml</th>
             <th>Comparé&nbsp;à: Eaux minérales</th>
           </tr>
-          <tr>
+          <tr id="energie">
             <td>&#201;nergie</td>
-            <td>
+            <td class="quantite">
               0kj <br />
               (0kcal)
             </td>
             <td></td>
           </tr>
-          <tr>
+          <tr id="matGrasses">
             <td>Matières grasses</td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="grasSat">
             <td class="tb_marge"><em>Acides gras saturés</em></td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="glucides">
             <td>Glucides</td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="sucres">
             <td class="tb_marge"><em>Sucres</em></td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="fibres">
             <td>Fibres alimentaires</td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="prot">
             <td>Protéines</td>
-            <td>0g</td>
+            <td class="quantite">0g</td>
           </tr>
-          <tr>
+          <tr id="sel">
             <td>Sel</td>
-            <td>0.052g</td>
+            <td class="quantite">0.052g</td>
             <td>+499%</td>
           </tr>
-          <tr>
+          <tr id="silice">
             <td>Silice</td>
-            <td>12mg</td>
+            <td class="quantite">12mg</td>
             <td>+333%</td>
           </tr>
-          <tr>
+          <tr id="bicar">
             <td>Bicarbonate</td>
-            <td>219mg</td>
+            <td class="quantite">219mg</td>
             <td>+301%</td>
           </tr>
-          <tr>
+          <tr id="potass">
             <td>Potassium</td>
-            <td>2mg</td>
+            <td class="quantite">2mg</td>
             <td>+206%</td>
           </tr>
-          <tr>
+          <tr id="chloru">
             <td>Chlorure</td>
-            <td>28mg</td>
+            <td class="quantite">28mg</td>
             <td>+453%</td>
           </tr>
-          <tr>
+          <tr id="calci">
             <td>Calcium</td>
-            <td>65mg</td>
+            <td class="quantite">65mg</td>
             <td>+256%</td>
           </tr>
-          <tr>
+          <tr id="magne">
             <td>Magnésium</td>
-            <td>11mg</td>
+            <td class="quantite">11mg</td>
             <td>+126%</td>
           </tr>
-          <tr>
-            <td>
-              Fruits‚ légumes‚ noix et huiles de colza‚ noix et olive
-              (estimation par analyse de la liste des ingrédients)
-            </td>
-            <td>0%</td>
-          </tr>
-          <tr>
+          <tr id="fluor">
             <td>Fluor</td>
-            <td>0.2mg</td>
+            <td class="quantite">0.2mg</td>
           </tr>
-          <tr>
+          <tr id="sulfate">
             <td>Sulfate</td>
-            <td>39mg</td>
+            <td class="quantite">39mg</td>
             <td>-65%</td>
           </tr>
         </table>
@@ -172,5 +170,6 @@
     <footer>
       <p>Mentions légales</p>
     </footer>
+    <script src="../../src/scripts/ficheProduit.js"></script>
   </body>
 </html>
