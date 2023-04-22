@@ -1,3 +1,3 @@
 GET https://world.openfoodfacts.org/api/v0/product/737628064502.json HTTP/1.1
 ###
-GET https://world.openfoodfacts.org/api/v0/product/737628064502.json?fields=generic_name,nutriments/iron_unit HTTP/1.1
+GET https://world.openfoodfacts.org/api/v0/product/737628064502.json?fields=nutriments HTTP/1.1
