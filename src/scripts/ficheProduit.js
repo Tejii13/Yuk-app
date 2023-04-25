@@ -6,155 +6,93 @@ let listeNutriments = {
   energy: {
     nom: "energy-kcal_100g",
     label: "energy",
-    quantite,
-    unite,
   },
   fat: {
     nom: "fat_100g",
     label: "fat",
-    quantite,
-    unite,
   },
   saturatedFat: {
     nom: "saturated-fat_100g",
     label: "saturated-fat",
-    quantite,
-    unite,
   },
   carbohydrates: {
     nom: "carbohydrates_100g",
     label: "carbohydrates",
-    quantite,
-    unite,
   },
   sugars: {
     nom: "sugars_100g",
     label: "sugars",
-    quantite,
-    unite,
   },
   fiber: {
     nom: "fiber_100g",
     label: "fiber",
-    quantite,
-    unite,
   },
   iron: {
     nom: "iron_100g",
     label: "iron",
-    quantite,
-    unite,
   },
   proteins: {
     nom: "proteins_100g",
     label: "proteins",
-    quantite,
-    unite,
   },
   salt: {
     nom: "salt_100g",
     label: "salt",
-    quantite,
-    unite,
   },
   silica: {
     nom: "silica_100g",
     label: "silica",
-    quantite,
-    unite,
   },
   bicarbonate: {
     nom: "bicarbonate_100g",
     label: "bicarbonate",
-    quantite,
-    unite,
   },
   potassium: {
     nom: "potassium_100g",
     label: "potassium",
-    quantite,
-    unite,
   },
   chloride: {
     nom: "chloride_100g",
     label: "chloride",
-    quantite,
-    unite,
   },
   calcium: {
     nom: "calcium_100g",
     label: "calcium",
-    quantite,
-    unite,
   },
   magnesium: {
     nom: "magnesium_100g",
     label: "magnesium",
-    quantite,
-    unite,
   },
   fluoride: {
     nom: "fluoride_100g",
     label: "fluoride",
-    quantite,
-    unite,
   },
   sodium: {
     nom: "sodium_100g",
     label: "sodium",
-    quantite,
-    unite,
   },
   vitaminA: {
     nom: "vitamin-a_100g",
     label: "vitamin_a",
-    quantite,
-    unite,
   },
   vitaminC: {
     nom: "vitamin-c_100g",
     label: "vitamin_c",
-    quantite,
-    unite,
   },
 };
-/*let listeNutriments = [
-  "energy-kcal_100g",
-  "fat_100g",
-  "saturated-fat_100g",
-  "carbohydrates_100g",
-  "sugars_100g",
-  "fiber_100g",
-  "iron_100g",
-  "proteins_100g",
-  "salt_100g",
-  "silica_100g",
-  "bicarbonate_100g",
-  "potassium_100g",
-  "chloride_100g",
-  "calcium_100g",
-  "magnesium_100g",
-  "fluoride_100g",
-  "sodium_100g",
-  "vitamin-a_100g",
-  "vitamin-c_100g",
-];*/
-/*for (let i in listeNutriments) {
-  console.log(listeNutriments[i].nom);
-}*/
 
-// FIXME
-// sessionStorage.setItem
-// Identification du formulaire dans lequel on travaille
-document.querySelector("form[role=search]").addEventListener("submit", search);
-// Format étendue de la fonction décrite au dessus
+// Attendre qu'il y ait un événement 'submit'
+document.addEventListener("DOMContentLoaded", search);
 
 // Récupérer l'URL du produit
 function search(event) {
   // Empêcher la page de se rafraîchir
   event.preventDefault();
-  // Attendre qu'il y ait un événement 'submit'
-  const searchValue = document.querySelector("#pd_search").value;
+  // Récupérer la reférence produit
+  const searchValue = new URLSearchParams(document.location.search).get(
+    "search"
+  );
+  console.log("Reference produit: " + searchValue);
   // Réinitialiser le formulaire de recherche
   document.querySelector("#pd_search").value = "";
   // Création de l'URL avec le code barres voulu intriqué à l'intérieur
@@ -206,12 +144,12 @@ function printData(p) {
     if (quantite != undefined) {
       // Récupération de l'unité
       unite = nutrimentsApi[listeNutriments[i].label + "_unit"];
+      console.log(nutrimentsApi[listeNutriments[i]]);
       // Intrication de la quantité et de l'unité
       quantite = quantite + " " + unite;
       printTable(i);
     } else {
       // Supprime les lignes vides
-      console.log("A retirer: " + listeNutriments[i].nom);
       document.querySelector("#" + listeNutriments[i].nom).remove();
     }
   }
