@@ -72,12 +72,12 @@ img.pg_produit {
   padding-right: 5%;
 }
 
-img.scoresnutri {
+img#scoresNutri {
   height: 50px;
   margin: 40px;
 }
 
-img.scoresnova {
+img#scoresNova {
   height: 50px;
   margin: 40px;
 }

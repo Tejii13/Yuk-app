@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/style/index_disp.css" />
-    <title>Document</title>
+    <meta name="description" content="C'est de l'eau... Oui, de l'eau!" />
+    <link rel="stylesheet" type="text/css" href="dist/style/disposition.css" />
+    <link rel="stylesheet" type="text/css" href="dist/style/style.css" />
+    <link rel="icon" type="image/png" href="img/images/yukapp_logo.svg" />
+    <title>YukaLikeApp</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <img
+        src="img/images/yukapp_long.svg"
+        alt="Nom et logo de l'application"
+        class="brandName"
+        height="52px"
+      />
+    </header>
     <main>
-      <p class="desc">
+      <!-- <p class="desc">
         Yuk'app! <br />
         Osez manger mieux!
-      </p>
-      <form action="dist/html/produit_x.html" class="search_container">
-        <input
-          type="text"
-          title="Recherche"
-          name="search"
-          id="in_search"
-          placeholder="Search..."
-        />
+      </p> -->
+      <form action="dist/html/produit_x.html" method="get">
+        <div class="search_container">
+          <input
+            type="text"
+            title="Recherche"
+            name="search"
+            id="in_search"
+            placeholder="Search..."
+          />
+        </div>
       </form>
       <a class="lien_butt" href="dist/html/produit_x.html"
         ><button type="button" class="feeling_lucky">
@@ -29,6 +41,8 @@
         </button></a
       >
     </main>
-    <footer></footer>
+    <footer>
+      <a href="dist/html/mentions.html" class="footer">Mentions légales</a>
+    </footer>
   </body>
 </html>
