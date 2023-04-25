@@ -45,20 +45,12 @@
           <img
             src="../../img/images/criStaline.webp"
             alt="Photo de cristaline"
-            class="imageProduit"
+            id="imageProduit"
           />
           <!-- NutriScore -->
           <section class="scores">
-            <img
-              src="../../img/images/nutriscore.png"
-              alt="NutriScore A"
-              class="scoresnutri"
-            />
-            <img
-              src="../../img/images/100px-NOVA_group_1.svg.png"
-              alt="NovaScore 1"
-              class="scoresnova"
-            />
+            <img alt="" id="scoresNutri" />
+            <img alt="" id="scoresNova" />
           </section>
         </image_titre>
         <!-- Produits dangereux -->
@@ -70,28 +62,26 @@
           <!-- Description -->
           <section class="description">
             <h2>Description</h2>
-            <p>
+            <p id="descriptionProduit">
               Bah... C'est de l'eau qu'on a foutu dans du plastique... Ouais
               c'est con comme idée, toute façon ça finira au même endroit. Dans
               l'océan!
             </p>
             <h3>Ingrédients</h3>
-            <p>Eau de source</p>
+            <p id="ingredients">Eau de source</p>
           </section>
         </div>
       </div>
       <!-- Table nutritionnelle -->
       <section class="tableau">
-        <table class="table">
+        <table class="table" id="tableNutri">
           <tr>
             <th>Tableau nutritionnel</th>
             <th>Pour 100g/ml</th>
-            <th>Comparé&nbsp;à: Eaux minérales</th>
           </tr>
           <tr id="energy-kcal_100g">
             <td>&#201;nergie</td>
             <td class="quantite"></td>
-            <td></td>
           </tr>
           <tr id="fat_100g">
             <td>Matières grasses</td>
@@ -113,6 +103,10 @@
             <td>Fibres alimentaires</td>
             <td class="quantite"></td>
           </tr>
+          <tr id="iron_100g">
+            <td>Fer</td>
+            <td class="quantite"></td>
+          </tr>
           <tr id="proteins_100g">
             <td>Protéines</td>
             <td class="quantite"></td>
@@ -120,46 +114,46 @@
           <tr id="salt_100g">
             <td>Sel</td>
             <td class="quantite"></td>
-            <td>+499%</td>
           </tr>
-          <tr id="silice">
+          <tr id="silica_100g">
             <td>Silice</td>
             <td class="quantite"></td>
-            <td>+333%</td>
           </tr>
-          <tr id="biocar">
+          <tr id="bicarbonate_100g">
             <td>Bicarbonate</td>
             <td class="quantite"></td>
-            <td>+301%</td>
           </tr>
-          <tr id="potass">
+          <tr id="potassium_100g">
             <td>Potassium</td>
             <td class="quantite"></td>
-            <td>+206%</td>
           </tr>
-          <tr id="chloru">
+          <tr id="chloride_100g">
             <td>Chlorure</td>
             <td class="quantite"></td>
-            <td>+453%</td>
           </tr>
           <tr id="calcium_100g">
             <td>Calcium</td>
             <td class="quantite"></td>
-            <td>+256%</td>
           </tr>
-          <tr id="magne">
+          <tr id="magnesium_100g">
             <td>Magnésium</td>
             <td class="quantite"></td>
-            <td>+126%</td>
           </tr>
-          <tr id="fluor">
+          <tr id="fluoride_100g">
             <td>Fluor</td>
             <td class="quantite"></td>
           </tr>
-          <tr id="sulfate">
-            <td>Sulfate</td>
+          <tr id="sodium_100g">
+            <td>Sodium</td>
             <td class="quantite"></td>
-            <td>-65%</td>
+          </tr>
+          <tr id="vitamin-a_100g">
+            <td>Vitamines A</td>
+            <td class="quantite"></td>
+          </tr>
+          <tr id="vitamin-c_100g">
+            <td>Vitamines C</td>
+            <td class="quantite"></td>
           </tr>
         </table>
       </section>
