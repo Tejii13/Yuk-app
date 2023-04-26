@@ -73,11 +73,11 @@ let listeNutriments = {
   },
   vitaminA: {
     nom: "vitamin-a_100g",
-    label: "vitamin_a",
+    label: "vitamin-a",
   },
   vitaminC: {
     nom: "vitamin-c_100g",
-    label: "vitamin_c",
+    label: "vitamin-c",
   },
 };
 
@@ -126,8 +126,10 @@ function printData(p) {
   // Changement nom du produit
   if (p.product_name == undefined) {
     document.querySelector("#nomProduit").textContent = p.generic_name;
+    document.title = p.generic_name;
   } else {
     document.querySelector("#nomProduit").textContent = p.product_name;
+    document.title = p.product_name;
   }
   //Changement description produit
   document.querySelector("#descriptionProduit").textContent = p.generic_name;
@@ -168,21 +170,21 @@ function printPictures(p) {
   // Changement image nutriscore
   if (p.nutriscore_grade != undefined) {
     document.querySelector(
-      "#scoresNutri"
+      "#scoreNutri"
     ).src = `../../img/images/nutriscore/nutriScore_${p.nutriscore_grade}.svg`;
   } else {
     document.querySelector(
-      "#scoresNutri"
+      "#scoreNutri"
     ).src = `../../img/images/nutriscore/nutriscore_undefined.svg`;
   }
   // Changement image NOVA
   if (p.nova_group != undefined) {
     document.querySelector(
-      "#scoresNova"
+      "#scoreNova"
     ).src = `../../img/images/NOVA/NOVA_${p.nova_group}.svg`;
   } else {
     document.querySelector(
-      "#scoresNova"
+      "#scoreNova"
     ).src = `../../img/images/NOVA/NOVA_unknown.svg`;
   }
 }
